@@ -1,3 +1,27 @@
+@charset "UTF-8";
+/**************** Général ****************/
+* {
+  font-family: "roboto", sans-serif;
+}
 
+.main-container {
+  width: 100%;
+  max-width: 767px;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  width: 100%;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
