@@ -39,9 +39,43 @@
   color: #363636;
 }
 
+.explorer {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 39px 45px 57px 45px;
+}
+.explorer__text {
+  text-align: center;
+}
+.explorer__text h2 {
+  margin: 0;
+}
+.explorer__text p {
+  margin-bottom: 0;
+}
+.explorer__button {
+  margin-top: 27px;
+}
+.explorer__button button {
+  background: linear-gradient(360deg, rgb(147, 86, 220) -11%, rgb(255, 121, 218) 123%);
+  color: white;
+  border-radius: 25px;
+  height: 50px;
+  width: 218px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.explorer__button button:hover {
+  background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
+}
+
 .card img {
   object-fit: cover;
-  width: 10%;
+  width: 100%;
 }
 
 footer img {
