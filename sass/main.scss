@@ -1,9 +1,10 @@
 
 @import "Utils/variables";
+@import "Utils/mixins";
 @import "Layout/header";
 @import "Components/explorer";
 @import "Components/fonctionnement";
-@import "Components/cards";
+@import "Components/restaurant-cards";
 @import "Layout/footer";
 
 * {
