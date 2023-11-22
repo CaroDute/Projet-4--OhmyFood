@@ -1,0 +1,45 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+
+    & img {
+        width: 197px;
+        height: 36px;
+    }
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #eaeaea;
+    
+    &__city {
+        display: flex;
+        gap: 17px;
+        width: 160px;
+        
+        &--input {
+            border: none;
+            font-size: 17px;
+            width: 100%;
+            background-color: #eaeaea;
+        }
+
+        & i {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+::placeholder {
+    color: #363636;
+}
+
