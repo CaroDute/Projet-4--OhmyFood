@@ -73,6 +73,47 @@
   background: linear-gradient(356deg, #a86ee0 0%, #b493de 33%, #ff93e1 100%);
 }
 
+.fonctionnement {
+  margin: 48px 20px 68px 20px;
+}
+.fonctionnement__card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.fonctionnement__card--content {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #f6f6f6;
+  height: 72px;
+  margin-left: 12px;
+}
+.fonctionnement__card--content p {
+  border: 1px solid #9356DC;
+  border-radius: 20px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9356DC;
+  color: white;
+  position: relative;
+  right: 13px;
+}
+.fonctionnement__card--content i {
+  margin-right: 27px;
+  margin-left: 10px;
+  font-size: 20px;
+  display: flex;
+}
+.fonctionnement__card--content h3 {
+  font-size: 16px;
+}
+
 .card img {
   object-fit: cover;
   width: 100%;

@@ -1,0 +1,47 @@
+.fonctionnement {
+    margin: 48px 20px 68px 20px ;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        
+
+        &--content {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: (0px 4px 15px rgba(0, 0, 0, 0.15));
+            background-color: #f6f6f6;
+            height: 72px;
+            margin-left: 12px;
+
+            p {
+                border: 1px solid $main-color;
+                border-radius: 20px;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background:$main-color;
+                color: white;
+                position: relative;
+                right: 13px;
+            }
+
+            i {
+                margin-right:27px;
+                margin-left: 10px;
+                font-size: 20px;
+                display: flex;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
