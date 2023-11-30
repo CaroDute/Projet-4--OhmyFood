@@ -6,11 +6,6 @@
         margin-bottom: 20px;
     }
 
-    &__cards a {
-        text-decoration: none;
-        color: inherit;
-    }
-
     .card {
         height: 251px;
         background-color: white;
@@ -23,8 +18,6 @@
         }
 
         & img {
-            object-fit: cover;
-            width: 100%;
             height: 174px;
             object-position: 50% 60%;
             border-radius: 20px 20px 0 0;
