@@ -76,6 +76,9 @@
 .fonctionnement {
   margin: 48px 20px 68px 20px;
 }
+.fonctionnement__title {
+  margin-bottom: 26px;
+}
 .fonctionnement__card {
   display: flex;
   flex-direction: column;
@@ -182,9 +185,31 @@
   padding-right: 25px;
 }
 
-footer img {
-  width: 197px;
-  height: 36px;
+footer {
+  padding: 22px 25px;
+  background: #363636;
+}
+
+.footer__logo img {
+  width: 105px;
+  height: auto;
+  filter: invert(100%);
+}
+
+.footer__list--content {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  color: white;
+}
+.footer__list--content-li {
+  margin-top: 7px;
+}
+.footer__list--content-li i {
+  margin-right: 11px;
+}
+.footer__list--content-li .fa-handshake-angle {
+  font-size: 11px;
 }
 
 * {

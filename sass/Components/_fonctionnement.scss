@@ -1,6 +1,10 @@
 .fonctionnement {
     margin: 48px 20px 68px 20px ;
 
+    &__title {
+        margin-bottom: 26px;
+    }
+
     &__card {
         display: flex;
         flex-direction: column;

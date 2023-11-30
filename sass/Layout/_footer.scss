@@ -1,4 +1,36 @@
-footer img {
-    width: 197px;
-    height: 36px;
+footer {
+    padding: 22px 25px;
+    background: #363636;
 }
+
+
+    .footer__logo img {
+            width: 105px;
+            height: auto;
+            filter: invert(100%);
+    }
+    
+    .footer__list {
+
+        &--content {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+            color: white;
+
+            &-li {
+                margin-top: 7px;
+
+                & i {
+                    margin-right:11px ;
+                }
+
+                .fa-handshake-angle {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    
+
+    
