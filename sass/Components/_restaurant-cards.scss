@@ -2,21 +2,78 @@
     padding: 54px 20px 66px 20px;
     background-color: $background-color;
 
-    &__cards {
-       
+    & h2 {
+        margin-bottom: 20px;
+    }
+
+    &__cards a {
+        text-decoration: none;
+        color: inherit;
     }
 
     .card {
         height: 251px;
-        @include card;
-        
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 18px;
+            
+
+        &__img {
+            position: relative;
+        }
 
         & img {
             object-fit: cover;
             width: 100%;
             height: 174px;
             object-position: 50% 60%;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            margin: 0;
         }
+
+        &__img--sticker {
+            position: absolute;
+            right: 5%;
+            top: 10%;
+            color: #008766;
+            border: 1px solid none;
+            background: $card-color;
+            padding: 7px 9px;
+            margin: 0;
+            border-radius: 2px;
+        }
+
+        &__content {
+            height:77px ;
+            width: 100%;
+            display: flex; 
+            justify-content: space-between;   
+               
+                &--txt {
+                    padding: 15px 0 12px 13px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                &--title {
+                    font-size: 18px;
+                    margin: 0;
+                    padding-bottom: 5px;
+                }
+                &--place {
+                    font-size: 17px;
+                    margin: 0;
+                }
+
+                &--heart {
+                    display: flex;
+                    align-items: center;
+                    font-size: 22px;
+                    padding-right: 25px;
+                }
+            }
     }
 }
 
