@@ -23,3 +23,7 @@
                     lighten(rgba(255, 121, 218, 1), 5%) 100%);        
         }
     }
+
+    @mixin border-title {
+        border-bottom: 3px solid $card-color;
+    }
