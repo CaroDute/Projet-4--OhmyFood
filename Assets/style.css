@@ -9,13 +9,13 @@
   position: relative;
 }
 .logo__return {
-  font-size: 30px;
+  font-size: 20px;
   position: absolute;
   left: 5%;
 }
 .logo img {
-  width: 210px;
-  height: 36px;
+  width: 162px;
+  height: auto;
 }
 
 .location {
@@ -210,6 +210,22 @@ footer {
 }
 .footer__list--content-li .fa-handshake-angle {
   font-size: 11px;
+}
+
+.restaurant__menu--img img {
+  height: 315px;
+  width: 100%;
+}
+
+.restaurant__menu--content {
+  border-radius: 40px;
+  background: white;
+  padding: 50px 20px;
+  margin-top: -50px;
+  position: relative;
+}
+.restaurant__menu--content-title h1 {
+  margin: 0;
 }
 
 * {

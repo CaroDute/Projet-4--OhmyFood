@@ -1,0 +1,21 @@
+
+.restaurant__menu--img img {
+        height: 315px;
+        width: 100%;
+}
+
+
+    .restaurant__menu--content {
+        border-radius: 40px;
+        background: white;
+        padding:50px 20px;
+        margin-top: -50px;
+        position: relative;
+
+        &-title h1 { 
+            margin: 0;
+        }
+    }
+
+
+
