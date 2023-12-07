@@ -97,7 +97,7 @@
 .fonctionnement {
   margin: 48px 20px 68px 20px;
 }
-.fonctionnement__title {
+.fonctionnement h2 {
   margin-bottom: 26px;
 }
 .fonctionnement__card {
@@ -136,6 +136,26 @@
 }
 .fonctionnement__card--content h3 {
   font-size: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding: 50px 20px;
+    margin: 0;
+  }
+  .fonctionnement__section {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .fonctionnement__card {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctionnement__card article {
+    width: 30%;
+  }
+  .fonctionnement__card article h3 {
+    font-weight: 500;
+  }
 }
 
 .restaurants {
@@ -199,18 +219,45 @@
   font-size: 22px;
   padding-right: 25px;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    padding: 30px 20px;
+  }
+  .restaurants__section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+  }
+  .restaurants__section--card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .restaurants__section h2 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .restaurants__cards {
+    display: flex;
+    gap: 100px;
+  }
+  .restaurants a {
+    width: 100%;
+  }
+}
 
-footer {
+.footer {
   padding: 22px 25px;
   background: #363636;
 }
-
 .footer__logo img {
   width: 105px;
   height: auto;
   filter: invert(100%);
 }
-
 .footer__list--content {
   list-style: none;
   padding: 0;
@@ -225,6 +272,21 @@ footer {
 }
 .footer__list--content-li .fa-handshake-angle {
   font-size: 11px;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+  }
+  .footer__logo {
+    display: flex;
+    align-items: end;
+  }
+  .footer__list--content {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 .restaurant__menu--img img {
@@ -322,18 +384,10 @@ footer {
 }
 
 .main-container {
-  max-width: 767px;
   min-width: 320px;
   box-sizing: border-box;
   padding: 0;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .main-container {
-    width: 100%;
-    min-width: 768px;
-    max-width: 1440px;
-  }
 }
 
 body {

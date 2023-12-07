@@ -68,6 +68,39 @@
                 }
             }
     }
+
+    @media (min-width:1024px) {
+        display: flex;
+        padding:30px 20px;
+        
+        &__section {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            max-width: 1024px;
+            width: 100%;
+
+            &--card {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            h2 {
+                margin:0 ;
+                padding-bottom: 10px;
+            }
+        }
+
+        &__cards {
+            display: flex;
+            gap:100px;
+        }
+       
+       a {
+        width: 100%;
+       }
+    }
 }
 
 

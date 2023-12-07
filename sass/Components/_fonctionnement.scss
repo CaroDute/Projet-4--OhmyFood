@@ -1,7 +1,7 @@
 .fonctionnement {
     margin: 48px 20px 68px 20px ;
 
-    &__title {
+    h2 {
         margin-bottom: 26px;
     }
 
@@ -48,6 +48,26 @@
         }
     }
 
+    @media screen and (min-width: 1024px) {
+            padding: 50px 20px;
+            margin: 0;
+           
+        &__section {
+            max-width: 1024px;
+            margin: auto;
+        }    
 
+        &__card {
+            display: flex;
+            flex-direction: row;
 
+            article {
+                width: 30%;
+
+                h3 {
+                    font-weight: 500;
+                }
+            }
+        }       
+    }
 }
