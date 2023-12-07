@@ -1,12 +1,14 @@
-.restaurant__menu--img img {
+.restaurant__menu {
+
+&--img img {
     height: 315px;
     width: 100%;
 }
 
 
-.restaurant__menu--content {
+&--content {
     border-radius: 40px;
-    background: white;
+    background: $background-color;
     padding: 38px 20px;
     margin-top: -50px;
     position: relative;
@@ -27,9 +29,11 @@
         font-size: 27px;
         font-family: "Shrikhand";
     }
+
+    
 }
 
-.restaurant__menu--cards {
+&--cards {
 
     &-title {
         margin-top: 35px;
@@ -95,5 +99,23 @@
         }
     }
 
+
+}
+
+@media (min-width:1024px) {
+     margin: auto;  
+     max-width: 1055px;
+     
+    &--content-title {
+        display: flex;
+        justify-content: center;
+    }
+
+     &--cards {
+        max-width: 634px;
+        margin: auto;
+     }
+   
+}
 
 }
