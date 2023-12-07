@@ -8,6 +8,13 @@
     width: 100%;
     position: relative;
 
+    @media (min-width: 768px) {
+        padding: 30px 0;
+        box-shadow: none;
+    }
+
+    // Pages restaurants //
+
     &__return {
         font-size: 20px;
         position: absolute; 

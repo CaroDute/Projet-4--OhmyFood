@@ -40,10 +40,6 @@
     &__text {
         text-align: center;
 
-        h2 {
-            margin: 0;
-        }
-
         p {
             margin-bottom: 0;
         }
@@ -55,5 +51,18 @@
         & button {
             @include button
         }
+    }
+
+    @media (min-width: 768px) {
+        padding: 30px 0;
+
+        h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+        }
+        
     }
 }
