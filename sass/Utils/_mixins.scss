@@ -38,9 +38,14 @@
             transition-duration: 800ms;
             cursor: pointer;
 
-        &:hover {
+        &:active {
             opacity: 1;
         }
     
+        @media (min-width:1024px) {
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 

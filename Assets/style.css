@@ -233,8 +233,13 @@
   transition-duration: 800ms;
   cursor: pointer;
 }
-.restaurants .card__content--heart .fa-full:hover {
+.restaurants .card__content--heart .fa-full:active {
   opacity: 1;
+}
+@media (min-width: 1024px) {
+  .restaurants .card__content--heart .fa-full:hover {
+    opacity: 1;
+  }
 }
 @media (min-width: 1024px) {
   .restaurants {
@@ -340,8 +345,13 @@
   transition-duration: 800ms;
   cursor: pointer;
 }
-.restaurant__menu .card__content--heart .fa-full:hover {
+.restaurant__menu .card__content--heart .fa-full:active {
   opacity: 1;
+}
+@media (min-width: 1024px) {
+  .restaurant__menu .card__content--heart .fa-full:hover {
+    opacity: 1;
+  }
 }
 .restaurant__menu .card__content--heart i {
   font-size: 28px;
