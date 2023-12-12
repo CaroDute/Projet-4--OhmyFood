@@ -11,6 +11,13 @@
         background-color: white;
         border-radius: 20px;
         margin-top: 18px;
+        position: relative;
+
+        & i {
+            position: absolute;
+            right: 7%;
+            bottom: 12%;
+           }
             
 
         &__img {
@@ -63,11 +70,26 @@
                 &--heart {
                     display: flex;
                     align-items: center;
-                    font-size: 22px;
+                    font-size: 25px;
                     padding-right: 25px;
+                    
+                    & .fa-full {
+                        color: transparent;
+                        background-clip: text;
+                        background-image: $heart-color;
+                        opacity: 0;
+                        transition-duration: 800ms;
+                        cursor: pointer;
+                    }
+
+                    & .fa-full:hover {
+                        opacity: 1;
+                    }
                 }
             }
     }
+
+
 
     @media (min-width:1024px) {
         display: flex;
@@ -97,15 +119,11 @@
             gap:100px;
         }
        
-       a {
+       article {
         width: 100%;
        }
     }
 }
-
-
-
-
 
 
 
