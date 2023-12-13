@@ -48,6 +48,21 @@
 
     &--cards {
 
+        &-animation1 {
+            animation: card-arrival 1000ms ease-in-out backwards;
+        }
+
+        &-animation2 {
+            animation: card-arrival 1000ms ease-in-out backwards;
+            animation-delay: 500ms;
+            }  
+        
+        &-animation3 {
+            animation: card-arrival 1000ms ease-in-out backwards;
+            animation-delay: 800ms; 
+        }
+
+
         &-title {
             margin-top: 35px;
 
@@ -59,7 +74,7 @@
                 margin: 0;
             }
         }
-
+        
         &-border {
             @include border-title;
         }
@@ -68,13 +83,40 @@
             @include card;
             display: flex;
             margin-top: 12px;
-            justify-content: space-between;
-            padding: 15px;
+
+            &-check {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:0px;
+                border-left:1px solid $card-color;
+                background: $card-color;
+                border-radius: 0 20px 20px 0;
+                opacity: 0;
+                transition: all 300ms;
+
+                i {
+                    border: 1px solid;
+                    border-radius: 25px;
+                    padding: 3px;
+                    color: $card-color;
+                    background: white;
+                }
+            }
+
+            &:hover &-check {
+                opacity: 1;
+                width: 75px;
+            }
+
 
             &-description {
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
+                padding: 15px;
+                width: 100%;
+                
 
                 h3 {
                     margin: 0;
@@ -89,6 +131,8 @@
 
             &-price {
                 display: flex;
+                padding: 15px;
+                
 
                 p {
                     display: flex;
