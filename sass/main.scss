@@ -35,4 +35,42 @@ img {
     width: 100%;
 }
 
+.loader {
+    position: fixed;
+    background-color: rgba(255, 255, 255,0.95);
+    height: 100vh;
+    inset: 0 0 0 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // animation: finish 3s forwards;
+    
+    p {
+        font-family: shrikhand;
+        font-size: 50px;
+        padding-right: 5px;
+        margin: 0;
+    }
+
+    @for $i from 1 through 8 {
+            &__content#{$i} {
+                animation: loader-content ease-out 1800ms both;
+                animation-iteration-count: 3;
+                animation-delay: $i * .2s;
+            }
+    }
+    
+    &__ustensils {
+        font-size: 30px;
+        padding-left: 50px;
+        color: transparent;
+        background-clip: text;
+        background-image: $heart-color;
+        animation: loader-border ease-in-out 1500ms infinite;
+    }
+        
+}
+
+
 

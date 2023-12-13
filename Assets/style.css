@@ -8,6 +8,36 @@
     opacity: 1;
   }
 }
+@keyframes finish {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes loader-content {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes loader-border {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -505,6 +535,71 @@ a {
 img {
   object-fit: cover;
   width: 100%;
+}
+
+.loader {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 100vh;
+  inset: 0 0 0 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader p {
+  font-family: shrikhand;
+  font-size: 50px;
+  padding-right: 5px;
+  margin: 0;
+}
+.loader__content1 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 0.2s;
+}
+.loader__content2 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 0.4s;
+}
+.loader__content3 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 0.6s;
+}
+.loader__content4 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 0.8s;
+}
+.loader__content5 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 1s;
+}
+.loader__content6 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 1.2s;
+}
+.loader__content7 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 1.4s;
+}
+.loader__content8 {
+  animation: loader-content ease-out 1800ms both;
+  animation-iteration-count: 3;
+  animation-delay: 1.6s;
+}
+.loader__ustensils {
+  font-size: 30px;
+  padding-left: 50px;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(180deg, rgb(147, 86, 220) -11%, rgb(255, 121, 218) 123%);
+  animation: loader-border ease-in-out 1500ms infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
