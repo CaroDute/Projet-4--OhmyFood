@@ -109,11 +109,20 @@
                 }
             }
 
-            &:hover &-check {
+            &:active &-check {
                 opacity: 1;
                 width: 75px;
                 cursor: pointer;
             }
+            
+                @media (min-width:1024px) {
+                    &:hover &-check {
+                    opacity: 1;
+                    width: 75px;
+                    cursor: pointer;
+                    }
+                }
+            
 
 
             &-description {

@@ -454,10 +454,17 @@
   color: #99E2D0;
   background: white;
 }
-.restaurant__menu--cards-content:hover .restaurant__menu--cards-content-check {
+.restaurant__menu--cards-content:active .restaurant__menu--cards-content-check {
   opacity: 1;
   width: 75px;
   cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .restaurant__menu--cards-content:hover .restaurant__menu--cards-content-check {
+    opacity: 1;
+    width: 75px;
+    cursor: pointer;
+  }
 }
 .restaurant__menu--cards-content-description {
   display: flex;
