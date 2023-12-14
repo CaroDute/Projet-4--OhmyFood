@@ -85,6 +85,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #353535;
 }
 
 ::placeholder {
@@ -173,6 +174,10 @@
   margin-left: 10px;
   font-size: 20px;
   display: flex;
+  color: #7e7e7e;
+}
+.fonctionnement__card--content .fa-store {
+  color: #9356DC;
 }
 .fonctionnement__card--content h3 {
   font-size: 16px;
@@ -418,7 +423,10 @@
   font-weight: 300;
   margin: 0;
 }
-.restaurant__menu--cards-border {
+.restaurant__menu--cards-title h2::after {
+  content: "";
+  display: block;
+  width: 40px;
   border-bottom: 3px solid #99E2D0;
 }
 .restaurant__menu--cards-content {
@@ -449,6 +457,7 @@
 .restaurant__menu--cards-content:hover .restaurant__menu--cards-content-check {
   opacity: 1;
   width: 75px;
+  cursor: pointer;
 }
 .restaurant__menu--cards-content-description {
   display: flex;
@@ -456,14 +465,21 @@
   gap: 5px;
   padding: 15px;
   width: 100%;
+  overflow: hidden;
 }
 .restaurant__menu--cards-content-description h3 {
   margin: 0;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .restaurant__menu--cards-content-description p {
   margin: 0;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .restaurant__menu--cards-content-price {
   display: flex;
@@ -546,10 +562,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: finish 3s forwards;
 }
 .loader p {
   font-family: shrikhand;
-  font-size: 50px;
+  font-size: 30px;
   padding-right: 5px;
   margin: 0;
 }
@@ -594,8 +611,8 @@ img {
   animation-delay: 1.6s;
 }
 .loader__ustensils {
-  font-size: 30px;
-  padding-left: 50px;
+  font-size: 20px;
+  padding-left: 30px;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(180deg, rgb(147, 86, 220) -11%, rgb(255, 121, 218) 123%);

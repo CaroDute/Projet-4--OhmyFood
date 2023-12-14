@@ -40,6 +40,11 @@
                 margin-left: 10px;
                 font-size: 20px;
                 display: flex;
+                color:$icon-color;
+            }
+
+            & .fa-store {
+                color: $main-color;
             }
 
             h3 {

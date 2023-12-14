@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     height: 50px;
-    background-color: #eaeaea;
+    background-color: $background-color-grey;
 
     &__city {
         display: flex;
@@ -13,13 +13,14 @@
             border: none;
             font-size: 17px;
             width: 100%;
-            background-color: #eaeaea;
+            background-color: $background-color-grey;
         }
 
         & i {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            color: #353535;
         }
     }
 }

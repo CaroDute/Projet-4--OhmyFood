@@ -44,11 +44,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    // animation: finish 3s forwards;
+    animation: finish 3s forwards;
     
     p {
         font-family: shrikhand;
-        font-size: 50px;
+        font-size: 30px;
         padding-right: 5px;
         margin: 0;
     }
@@ -62,8 +62,8 @@ img {
     }
     
     &__ustensils {
-        font-size: 30px;
-        padding-left: 50px;
+        font-size: 20px;
+        padding-left: 30px;
         color: transparent;
         background-clip: text;
         background-image: $heart-color;

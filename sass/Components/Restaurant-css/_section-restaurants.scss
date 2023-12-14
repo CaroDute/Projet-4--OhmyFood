@@ -72,11 +72,16 @@
                 font-style: normal;
                 font-weight: 300;
                 margin: 0;
+
+                
             }
-        }
-        
-        &-border {
-            @include border-title;
+
+            h2::after {
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    border-bottom: 3px solid $card-color;
+                }
         }
 
         &-content {
@@ -107,6 +112,7 @@
             &:hover &-check {
                 opacity: 1;
                 width: 75px;
+                cursor: pointer;
             }
 
 
@@ -116,16 +122,23 @@
                 gap: 5px;
                 padding: 15px;
                 width: 100%;
+                overflow: hidden;
                 
 
                 h3 {
                     margin: 0;
                     font-size: 18px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow:ellipsis; 
                 }
 
                 p {
                     margin: 0;
                     font-size: 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow:ellipsis; 
                 }
             }
 
