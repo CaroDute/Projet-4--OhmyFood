@@ -67,6 +67,8 @@
                     margin: 0;
                 }
 
+    //******** Animation coeur ********//  
+               
                 &--heart {
                     display: flex;
                     align-items: center;
@@ -82,6 +84,7 @@
     }
 
 
+//******** Media Queries ********//
 
     @media (min-width:1024px) {
         display: flex;

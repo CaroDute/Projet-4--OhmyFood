@@ -45,6 +45,7 @@
     }
 
 
+    //******** Animation arrivée cards ********//
 
     &--cards {
 
@@ -61,6 +62,8 @@
             animation: card-arrival 1000ms ease-in-out backwards;
             animation-delay: 800ms; 
         }
+
+
 
 
         &-title {
@@ -180,6 +183,9 @@
 
 
     }
+
+
+    //******** Media Queries ********//
 
     @media (min-width:1024px) {
         margin: auto;
