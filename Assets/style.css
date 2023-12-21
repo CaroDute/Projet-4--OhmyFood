@@ -440,7 +440,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 0px;
+  width: 0;
+  height: 100%;
   border-left: 1px solid #99E2D0;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -454,9 +455,12 @@
   color: #99E2D0;
   background: white;
 }
-.restaurant__menu--cards-content:active .restaurant__menu--cards-content-check {
-  opacity: 1;
+.restaurant__menu--cards-content input {
+  display: none;
+}
+.restaurant__menu--cards-content input:checked + div {
   width: 75px;
+  opacity: 1;
   cursor: pointer;
 }
 @media (min-width: 1024px) {
